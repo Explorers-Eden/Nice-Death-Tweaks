@@ -10,5 +10,3 @@ execute if score @s death_tweaks.attribute.counter matches 9 run attribute @s mi
 execute if score @s death_tweaks.attribute.counter matches 10..14 run attribute @s minecraft:max_health modifier add death_tweaks_10 -10 add_value
 execute if score @s death_tweaks.attribute.counter matches 15..19 run attribute @s minecraft:max_health modifier add death_tweaks_11 -12 add_value
 execute if score @s death_tweaks.attribute.counter matches 20.. run attribute @s minecraft:max_health modifier add death_tweaks_12 -14 add_value
-
-scoreboard players reset @s death_tweaks.has_died

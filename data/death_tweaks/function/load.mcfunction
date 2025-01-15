@@ -3,12 +3,11 @@ scoreboard objectives add eden.technical dummy
 
 ##additional scoreboards
 scoreboard objectives add death_tweaks.deathcounter deathCount
-scoreboard objectives add death_tweaks.has_died deathCount
 scoreboard objectives add death_tweaks.attribute.counter dummy
 
 ##init schedules
 schedule function death_tweaks:health_loss/reset_max_health 1s
-schedule function death_tweaks:health_loss/death_check 1t
+schedule function death_tweaks:health_loss/run 1t
 
 ##set gamerules
 gamerule showDeathMessages false
